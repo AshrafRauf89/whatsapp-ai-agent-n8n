@@ -43,4 +43,69 @@ This project automates business conversations, customer support, lead generation
 ---
 
 ## 🏗 Architecture Overview
+WhatsApp User
+│
+▼
+WhatsApp Cloud API
+│
+▼
+n8n Orchestrator
+│
+├── AI Agent (OpenAI)
+├── RAG Pipeline
+├── Scheduler & Calendar Agent
+├── CRM & Lead Capture
+└── Alerts & Notifications
 
+
+---
+
+## 🚀 Use Cases
+
+✔️ Customer support bot  
+✔️ Lead qualification & capture  
+✔️ Appointment scheduling  
+✔️ Knowledge-base response system  
+✔️ Multilingual support
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+1. Node.js & Docker  
+2. n8n (self-hosted or cloud)  
+3. WhatsApp API credentials  
+4. OpenAI API key  
+5. Vector Database (Pinecone/FAISS)
+
+### Install & Run
+```bash
+git clone https://github.com/AshrafRauf89/whatsapp-ai-agent-n8n.git
+cd whatsapp-ai-agent-n8n
+Import Workflows
+
+Open n8n
+
+Go to Workflows → Import
+
+Select JSON files
+
+🧠 How It Works
+
+User sends message on WhatsApp
+
+n8n webhook receives it
+
+Message is passed to AI agent
+
+RAG system fetches relevant context
+
+Response sent back to user
+
+📫 Contact & Connect
+
+👤 Ashraf Rauf
+📧 Email: ashrafrauf.icdl@yahoo.com
+
+🔗 GitHub: https://github.com/AshrafRauf89
