@@ -1,48 +1,49 @@
 # 🤖 WhatsApp AI Automation Agent (n8n)
 
 **Enterprise-grade AI agent for WhatsApp** built with **n8n**, **OpenAI GPT**, and **RAG (Retrieval-Augmented Generation)**.  
-This project automates business conversations, customer support, lead generation, and scheduling workflows — all inside WhatsApp.
+This system automates business conversations, customer support, lead generation, and scheduling — all inside WhatsApp.
 
 ---
 
 ## 🧠 Core Features
 
 ### 🤖 AI Conversational Engine
-- Natural language understanding (text, voice-to-text)
-- Context-aware responses
-- Support for images and links
+- Natural language understanding (text + voice)
+- Context-aware responses  
+- Image & link support  
 
 ### 🔄 Workflow Automation
-- Built using **n8n visual workflow builder**
-- Connects to APIs and webhooks
-- Integrates with multiple services
+- Built with **n8n** visual workflow builder  
+- API & Webhook integration  
+- Multi-service orchestration  
 
 ### 📚 RAG Knowledge System
-- Stores documents in a vector database
-- Retrieves answers based on real data (PDFs, docs)
-- Smart context answering with embeddings
+- Store documents in a vector database  
+- Answer from PDFs & company docs  
+- Embedding-based retrieval  
 
 ### 📅 Business Integrations
-- Google Calendar scheduling
-- Email notifications
-- CRM and lead automation
+- Google Calendar scheduling  
+- Email notifications  
+- CRM & lead automation  
 
 ---
 
 ## 🛠 Tech Stack
 
 | Layer | Technology |
-|-------|------------|
+|------|------------|
 | Orchestration | n8n |
-| AI | OpenAI GPT (API) |
-| RAG | Pinecone or FAISS |
+| AI | OpenAI GPT |
+| RAG | Pinecone / FAISS |
 | Messaging | WhatsApp API / Evolution API |
-| Backend | Python (if needed) |
+| Backend | Python |
 | Deployment | Docker / Cloud |
 
 ---
 
-## 🏗 Architecture Overview
+## 🏗 Architecture
+
 WhatsApp User
 │
 ▼
@@ -53,59 +54,53 @@ n8n Orchestrator
 │
 ├── AI Agent (OpenAI)
 ├── RAG Pipeline
-├── Scheduler & Calendar Agent
-├── CRM & Lead Capture
-└── Alerts & Notifications
-
+├── Calendar Agent
+├── CRM & Leads
+└── Notifications
 
 ---
 
 ## 🚀 Use Cases
 
-✔️ Customer support bot  
-✔️ Lead qualification & capture  
-✔️ Appointment scheduling  
-✔️ Knowledge-base response system  
-✔️ Multilingual support
+- Customer support bot  
+- Lead qualification  
+- Appointment booking  
+- Knowledge-base assistant  
+- Multilingual WhatsApp agent  
 
 ---
 
 ## 📦 Getting Started
 
-### Prerequisites
-1. Node.js & Docker  
-2. n8n (self-hosted or cloud)  
-3. WhatsApp API credentials  
-4. OpenAI API key  
-5. Vector Database (Pinecone/FAISS)
+### Requirements
+- Docker & Node.js  
+- n8n (cloud or self-hosted)  
+- WhatsApp API  
+- OpenAI API key  
+- Pinecone or FAISS  
 
-### Install & Run
+### Setup
 ```bash
 git clone https://github.com/AshrafRauf89/whatsapp-ai-agent-n8n.git
 cd whatsapp-ai-agent-n8n
-Import Workflows
-
-Open n8n
-
-Go to Workflows → Import
-
-Select JSON files
+Import workflows into n8n:
+Workflows → Import → JSON files
 
 🧠 How It Works
 
 User sends message on WhatsApp
 
-n8n webhook receives it
+Webhook triggers n8n
 
-Message is passed to AI agent
+Message goes to AI agent
 
-RAG system fetches relevant context
+RAG retrieves best knowledge
 
-Response sent back to user
+Response sent back
 
-📫 Contact & Connect
+📫 Contact
 
-👤 Ashraf Rauf
-📧 Email: ashrafrauf.icdl@yahoo.com
+Ashraf Rauf
+📧 ashrafrauf.icdl@yahoo.com
 
-🔗 GitHub: https://github.com/AshrafRauf89
+🔗 https://github.com/AshrafRauf89
